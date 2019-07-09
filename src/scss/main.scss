@@ -1,0 +1,84 @@
+@import url('https://fonts.googleapis.com/css?family=Muli:400,800&display=swap');
+@import "colors";
+@import "bootstrap-grid";
+
+/* Base */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    font-size: 14px;
+    line-height: 20px;
+    font-family: 'Muli', sans-serif;
+}
+
+section {
+    width: 100%;
+    min-height: 899px;
+    height: 100vh;
+    position: relative;
+    position: relative;
+}
+/* First section */
+.first-section {
+    background-color: $mainBg;
+    background-image: url('/assets/BG.png'),;
+    background-size: contain;
+    background-position: center right;;
+    background-repeat: no-repeat;
+    padding-top: 66px;
+    &:before {
+        content: url('/assets/head-bottom-left.png');
+        position: absolute;
+        left: 0;
+        bottom: -35px;
+    }
+    &:after {
+        content: url('/assets/head-bottom-right.png');
+        position: absolute;
+        right: 0;
+        bottom: -29px;
+    }
+}
+.header {
+    max-width: 1170px;
+    margin: auto;
+    &-bg {
+        position: absolute;
+        right: 0;
+        bottom: 0;
+        height: 100%;
+    }
+}
+.logo{
+    &__text {
+        text-transform: uppercase;
+        font-size: 20px;
+        font-weight: bold;
+        color: #fff;
+        margin-bottom: -6px;
+    }
+    &__img {
+        width: 26px;
+        height: 30px;
+        margin-right: 7px;
+    }
+}
+/* navigation */
+.nav {
+    &__list {
+        list-style-type: none;
+        color: #fff;
+        font-size: 14px;
+        & li {
+            margin-left: 19px;
+            padding: 6px;
+            cursor: pointer;
+            &:hover {
+                border-bottom: 1px solid yellow;
+            }
+        }
+    }
+}
