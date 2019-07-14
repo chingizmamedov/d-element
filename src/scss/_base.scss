@@ -11,10 +11,18 @@ body {
     font-family: 'Muli', sans-serif;
 }
 
-section {
+.section {
     width: 100%;
-    min-height: 899px;
-    height: 100vh;
     position: relative;
     position: relative;
+}
+
+.btn {
+    display: inline-block;
+    border-radius: 31px;
+    text-decoration: none;
+    font-size: 16px;
+    padding: 21px;
+    background-color: #333;
+    color: #fff;
 }

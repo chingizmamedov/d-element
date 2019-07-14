@@ -1,0 +1,94 @@
+.about-myself {
+    padding-top: 100px;
+    &__content {
+        // max-height: 731px;
+        height: 100%;
+    }
+    &__img {
+        max-width: 514px;
+        min-width: 514px;
+        position: relative;
+        height: 100%;
+        &__texture {
+            position: absolute;
+            left: 0;
+            top: 0;
+            width: 100%;
+            height: 93%;
+        }
+        
+        &__background {
+            width: 100%;
+            height: 100%;
+        }
+    }
+    &__i-do {
+        padding: 65px 14% 50px 9%;
+        background: linear-gradient(#fff, #f7f7fc);
+    }
+}
+.i-do {
+    &__title {
+        font-family: 'Trirong', serif;
+        font-size: 40px;
+        color: $mainBg;
+        margin-bottom: 30px;
+        font-weight: 300;
+    }
+    &__content {
+        font-size: 16px;
+        color: #595666;
+        line-height: 28px;
+        margin-bottom: 40px;
+    }
+    &__subtitle {
+        font-size: 26px;
+        color: $mainBg;
+        font-weight: 300;
+        font-family: 'Trirong', serif;
+        margin-bottom: 40px;
+    }
+}
+.about-myself__exp__item {
+    &__title {
+        font-size: 16px;
+        font-weight: 500;
+        color: #595666;
+        margin-bottom: 20px;
+    }
+}
+.about-myself__i-do_wrap {
+    padding-bottom: 50px;
+}
+.btn_what-i-do {
+    background-color: $mainBg;
+    margin-top: 59px;
+    padding: 27px 55px;
+    border-radius: 44px;
+    text-transform: uppercase;
+    transition: .2s;
+    &:hover {
+        background-color: #404392;
+    }
+}
+@media screen and (max-width: 1024px) {
+    .about-myself__img {
+        display: none;
+    }
+    .about-myself__i-do_wrap {
+        padding-bottom: 0;
+    }
+}
+@media screen and (max-width: 576px) {
+    .about-myself__i-do {
+        padding: 20px 6% 30px;
+    }
+}
+@media screen and (max-width: 425px) {
+    .about-myself__exp {
+        flex-wrap: wrap;
+        &__item {
+            margin-bottom: 20px;
+        }
+    }
+}

@@ -1,0 +1,25 @@
+.happyclients {
+    margin-top: 100px;
+    margin-bottom: 100px;
+    min-height: 297px;
+    background-image: url('#{$asseturl}happy_bg.jpg');
+    padding-top: 70px;
+    text-align: center;
+    &__title {
+        font-family: 'Trirong', serif;
+        font-size: 40px;
+        color: #fff;
+        font-weight: 300;
+        margin-bottom: 45px;
+    }
+}
+.slick-track {
+    display: flex;
+    align-items: center;
+    height: 90px;
+}
+.slick-initialized .slick-slide {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
