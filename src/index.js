@@ -22,6 +22,7 @@ $('.burger').click(function(){
     $('.mobile-menu').toggleClass('mobile-menu__shown')
 })
 
+
 $('.happyclients__slider').slick({
     slidesToShow: 6,
     slidesToScroll: 3,
@@ -66,6 +67,28 @@ $('.happyclients__slider').slick({
         // instead of a settings object
       ]
 })
+
+// $('.blog__flag').slick({
+//   slidesToShow: 3,
+//   slidesToScroll: 3,
+//   dots: false,
+//   prevArrow: false,
+//   nextArrow: false,
+//   responsive: [
+//       {
+//           breakpoint: 1200,
+//           settings: {
+//             slidesToShow: 1,
+//             slidesToScroll: 1,
+//             infinite: true,
+//             dots: false
+//           }
+//         }
+//       // You can unslick at a given breakpoint now by adding:
+//       // settings: "unslick"
+//       // instead of a settings object
+//     ]
+// })
 
 $(document).scroll(function(){
     var scrolCur = $(document).scrollTop()
