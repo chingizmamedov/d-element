@@ -1,0 +1,245 @@
+.elem {
+    &-one {
+        width: 33.4%;
+        height: 880px;
+        float: left;
+        padding-right: 50px;
+        padding-bottom: 50px;
+        position: relative;
+        &:before {
+            position: absolute;
+            content: '';
+            left: 0;
+            bottom: 600px;
+            border: 1px solid #4d407c;
+            border-bottom: none;
+            border-left: none;
+            width: 100%;
+            height: 240px;
+            z-index: 99;
+        }
+        &:after {
+            position: absolute;
+            content: '';
+            left: 0;
+            bottom: 0;
+            border: 1px solid #4d407c;
+            border-top: none;
+            border-left: none;
+            width: 100%;
+            height: 600px;
+            z-index: -1;
+        }
+    }
+    &-two {
+        width: 23.2%;
+        height: 750px;
+        float: left;
+        margin-right: 1.6%;
+        position: relative;
+        display: flex;
+        flex-direction: column;
+        &__item {
+            &_one {
+                width: 100%;
+                height: 463px;
+                background-image: url('#{$asseturl}gallery1.png');
+                background-repeat: no-repeat;
+                background-size: cover;
+                transition: .5s;
+                }
+            &_two {
+                height: 267px;
+                width: 100%;
+                background-image: url('#{$asseturl}gallery6.png');
+                background-repeat: no-repeat;
+                background-size: cover;
+                transition: .5s;
+            }
+            &__last {
+                width: 100%;
+                height: 253px;
+            }
+        }
+    }
+    &-three {
+        width: 41.8%;
+        height: 750px;
+        display: flex;
+        flex-direction: column;
+        float: left;
+        justify-content: space-between;
+        &__item {
+            height: 100%;
+            &_one__one {
+                margin-right: 10px;
+            }
+            &__last {
+                width: 100%;
+                height: 100%;
+            }
+        }
+        &__items {
+            height: 235px;
+            display: flex;
+            position: relative;
+            justify-content: space-between;
+            &_one {
+                &__one {
+                    width: 470px;
+                    height: 100%;
+                    background: red;
+                    background-image: url('#{$asseturl}gallery2.png');
+                    background-repeat: no-repeat;
+                    background-size: cover;
+                    transition: .5s;
+                }
+                &__two {
+                    width: 166px;
+                    height: 100%;
+                    background: green;
+                    background-image: url('#{$asseturl}gallery3.png');
+                    background-repeat: no-repeat;
+                    background-size: cover;
+                    transition: .5s;
+                }
+            }
+            &_two {
+                &__one {
+                    width: 300px;
+                    height: 100%;
+                    background: palevioletred;
+                    background-image: url('#{$asseturl}gallery4.png');
+                    background-repeat: no-repeat;
+                    background-size: cover;
+                    transition: .5s;
+                }
+                &__two {
+                    width: 330px;
+                    height: 100%;
+                    background: darkcyan;
+                    background-image: url('#{$asseturl}gallery5.png');
+                    background-repeat: no-repeat;
+                    background-size: cover;
+                    transition: .5s;
+                }
+            }
+            &_three {
+                &__one {
+                    width: 100%;
+                    height: 100%;
+                    background: salmon;
+                    background-image: url('#{$asseturl}gallery7.png');
+                    background-repeat: no-repeat;
+                    background-size: cover;
+                    transition: .5s;
+                }
+            }
+        }
+    }
+}
+.portfolio {
+    margin-bottom: 100px !important;
+    &__main {
+        position: relative;
+        background-color: $orange;
+        width: 100%;
+        height: 100%;
+        padding-top: 208px;
+        padding-left: 77px;
+        padding-right: 70px;
+    }
+    &__title {
+        font-size: 40px;
+        font-family: 'Trirong', serif;
+        color: $mainBg;
+        font-weight: 500;
+        padding-bottom: 75px;
+    }
+    &__text {
+        line-height: 28px;
+        color: $mainBg;
+        margin-bottom: 40px;
+        z-index: 999;
+    }
+    &__link {
+        font-weight: 600;
+        color: $mainBg;
+        text-decoration: none;
+    }
+}
+.btn-seemore {
+    position: absolute;
+    left: 45px;
+    bottom: -120px;
+    background: none;
+    color: #ffcc00;
+    border: 1px solid #ffcc00;
+    padding-left: 60px;
+    padding-right: 60px;
+    padding-top: 13px;
+    padding-bottom: 13px;
+    transition: .4s;
+    &:hover {
+        color: #fff;
+        background-color: #ffcc00;
+    }
+}
+.element__item-wrap {
+    overflow: hidden;
+    &_one {
+        margin-bottom: 35px;
+    }
+}
+.element__item-in {
+    cursor: pointer;
+}
+.element__item-wrap:hover .element__item-in {
+    transform: scale(1.2);
+}
+@media screen and (max-width: 1200px) {
+    .elem-three__items_one__two, .elem-three__items_two__one {
+        display: none;
+    }
+    .elem-three__items_one__one, .elem-three__items_two__two {
+        width: 100%;
+        margin: 0;
+    }
+    .elem-one {
+        width: 39%;
+    }
+    .elem-two {
+        width: 30%;
+    }
+    .elem-three {
+        width: 30%;
+    }
+}
+@media screen and (max-width: 1024px) {
+    .elem-three{
+        display: none;
+    }
+    .elem-one {
+        width: 60%;
+    }
+    .elem-two {
+        width: 40%;
+        margin: 0;
+    }
+}
+@media screen and (max-width: 768px) {
+    .portfolio {
+        flex-direction: column;
+        margin-bottom: 220px !important;
+    }
+    .elem-one, .elem-two {
+        width: 100%;
+    }
+    .btn-seemore {
+        left: 0;
+        right: 0;
+        margin: auto;
+        width: 50%;
+        text-align: center;
+    }
+}
