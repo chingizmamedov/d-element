@@ -1,5 +1,6 @@
 .blog {
     margin-bottom: 230px;
+    // overflow-x: hidden;
     &__cont {
         background-color: #fafafd;
         width: 100%;
@@ -7,7 +8,7 @@
         padding-right: 64px;
         padding-top: 70px;
         display: flex;
-        max-height: 840px;
+        max-height: 885px;
     }
     &__flag {
         width: 100%;
@@ -23,6 +24,7 @@
         max-width: 490px;
         width: 33%;
         background-color: #fff;
+        z-index: 99;
         &__head {
             width: 100%;
             &__img {
@@ -34,6 +36,7 @@
             width: 100% !important;
         }
         &__wrap {
+            position: relative;
             max-width: 490px;
             width: 33%;
             margin-right: 60px;
@@ -104,19 +107,174 @@
             }
         }
     }
+    &__outter-head {
+        display: none;
+        &__title {
+            font-size: 36px;
+            color: #2b2d5c;
+            font-weight: 300;
+            font-family: 'Trirong', serif;
+            line-height: 38px;
+            margin-bottom: 18px;
+        }
+        &__subtitle {
+            font-size: 20px;
+            line-height: 25px;
+            color: #87899e;
+            font-weight: 300;
+            margin-right: -6px;
+            margin-left: -6px;
+            margin-bottom: 38px;
+        }
+    }
+}
+.blog__flag .slick-track {
+    height: auto;
+}
+.blog__cross_up {
+    position: absolute;
+    width: 178px;
+    height: 178px;
+    top: 0;
+    right: 0;
+    &:before {
+        width: 257px;
+        height: 2px;
+        content: '';
+        position: absolute;
+        background: #000;
+        top: 0;
+        right: 49px;
+    }
+    &:after {
+        position: absolute;
+        content: '';
+        background: #000;
+        width: 2px;
+        height: 316px;
+        left: 0;
+        top: -220px;
+        z-index: 0;
+    }
+}
+.blog__cross_down {
+    width: 192px;
+    height: 62px;
+    position: absolute;
+    bottom: -2px;
+    left: 20px;
+    &:before {
+        width: 255px;
+        height: 2px;
+        content: '';
+        position: absolute;
+        background: #000;
+        top: 0;
+        left: 0;
+    }
+    &:after {
+        position: absolute;
+        content: '';
+        background: #000;
+        width: 2px;
+        height: 144px;
+        right: 0;
+        top: -80px;
+        z-index: 0;
+    }
+}
+.blog__back {
+    width: 100%;
+    height: 100%;
+    left: 0;
+    top: 0;
+    overflow: hidden;
+    position: absolute;
+    &_kw {
+        width: 100%;
+        height: 80%;
+        border: 2px solid #fff;
+        position: absolute;
+        top: 120px;
+        right: 0;
+        left: 34%;
+    }
 }
 
 @media screen and (max-width: 1200px) {
-    .blog__item__wrap {
-        order: -1;
-        min-width: 100%;
+    .blog__item__head {
+        display: none;
+    }
+}
+@media screen and (max-width: 1024px) {
+    .blog__outter-head {
+        display: block;
+        text-align: center;
+    }
+    .blog__back, .blog__cross_up, .blog__cross_down {
+        display: none;
+    }
+    .blog__item__title {
+        font-size: 18px;
+        line-height: 24px;
+        margin-bottom: 15px;
+    }
+    .blog__item__info {
+        margin-bottom: 17px;
+    }
+    .blog__item__text {
+        line-height: 20px;
+        margin-bottom: 20px;
+    }
+    .blog__item__body {
+        padding: 22px 18px 39px 13px;
+    }
+    .blog__inner-head {
+        display: none;
+    }
+    .blog__cont {
+        padding-bottom: 14px;
+        flex-direction: column;
+    }
+}
+@media screen and (max-width: 768px) {
+    .blog__cont {
+        flex-direction: column;
+        padding-left: 38px;
+        padding-right: 29px;
+        padding-top: 31px;
+    }
+    .blog__flag {
+        width: 100%;
+        overflow: hidden;
     }
     .blog__item {
         min-width: 100%;
+        margin: 0;
+        box-shadow: none;
     }
-    .blog__flag {
-        overflow-x: auto;
-        width: 70%;
-        max-width: 500px;
+    .blog__item__wrap {
+        min-width: 100%;
+        margin: 0;
+        box-shadow: none;
+    }
+}
+@media screen and (max-width: 425px) {
+    .blog {
+        margin-bottom: 100px;
+    }
+    .portfolio__main {
+        padding-top: 84px;
+        padding-left: 15px;
+        padding-right: 20px;
+    }
+    .elem-one {
+        height: 620px;
+        &:after {
+            height: 560px;
+        }
+        &:before {
+            bottom: 325px;
+        }
     }
 }

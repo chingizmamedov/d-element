@@ -1,6 +1,7 @@
 import './scss/main.scss'
 import slick from 'slick-slider'
 import $ from 'jquery'
+import Validation from './js/validationd/validationd'
 
 var is_safari = /^((?!chrome|android).)*safari/i.test(navigator.userAgent);
 
@@ -68,37 +69,62 @@ $('.happyclients__slider').slick({
       ]
 })
 
-// $('.blog__flag').slick({
-//   slidesToShow: 3,
-//   slidesToScroll: 3,
-//   dots: false,
-//   prevArrow: false,
-//   nextArrow: false,
-//   responsive: [
-//       {
-//           breakpoint: 1200,
-//           settings: {
-//             slidesToShow: 1,
-//             slidesToScroll: 1,
-//             infinite: true,
-//             dots: false
-//           }
-//         }
-//       // You can unslick at a given breakpoint now by adding:
-//       // settings: "unslick"
-//       // instead of a settings object
-//     ]
-// })
+$('.blog__flag').slick({
+  prevArrow: false,
+  nextArrow: false,
+  responsive: [
+      {
+          breakpoint: 7699,
+          settings: "unslick"
+        },
+        {
+          breakpoint: 768,
+          settings: {
+            autoplay: true,
+            autoplaySpeed: 2000,
+            slidesToShow: 1,
+            slidesToScroll: 1
+          }
+        }
+      // You can unslick at a given breakpoint now by adding:
+      // settings: "unslick"
+      // instead of a settings object
+    ]
+})
+
+$('#pageUp').click(function() {
+  $('body,html').animate({scrollTop:0},700);
+});
+
+// Validation('.email')
+console.log(Validation)
+
 
 $(document).scroll(function(){
+  var lengthFooterTop = $('.footer').offset().top - $(window).scrollTop(),
+      lengthPageUpTop = $('#pageUp').offset().top - $(window).scrollTop() + 57
+
+  if(lengthFooterTop < lengthPageUpTop) {
+    console.log('new sty')
+    $('#pageUp').addClass('stickyPageUp')
+    
+  } 
+  
+  if(lengthFooterTop > $(window).height() - 30) {
+    $('#pageUp').removeClass('stickyPageUp')
+  }
+
     var scrolCur = $(document).scrollTop()
     if($(document).scrollTop() > 60) {
         $('.fixed-header').addClass('fixed-header__shown')
+        $('#pageUp').fadeIn()
     }
     else {
         $('.fixed-header').removeClass('fixed-header__shown')
+        $('#pageUp').fadeOut()
+        
     }
+  
     
 })
 
-console.log('QwbpXK')
