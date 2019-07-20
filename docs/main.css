@@ -1253,6 +1253,9 @@ body {
     .nav__list li:hover:before {
       transform: scale(1); }
 
+/**
+ mobile-menu
+*/
 .mobile-menu {
   position: fixed;
   width: 100%;
@@ -1483,6 +1486,9 @@ body {
     padding: 16px 45px 20px 38px;
     z-index: 99; } }
 
+/**
+ blog About
+*/
 .about-myself {
   padding-top: 100px; }
   .about-myself__content {
@@ -1560,6 +1566,9 @@ body {
     .about-myself__exp__item {
       margin-bottom: 20px; } }
 
+/**
+ happyclients
+*/
 .happyclients {
   margin-top: 100px;
   margin-bottom: 100px;
@@ -1584,6 +1593,9 @@ body {
   align-items: center;
   justify-content: center; }
 
+/**
+ Portfolio
+*/
 .elem-one {
   width: 33.4%;
   height: 880px;
@@ -1832,6 +1844,9 @@ body {
     width: 50%;
     text-align: center; } }
 
+/**
+ blog
+*/
 .blog {
   margin-bottom: 230px; }
   .blog__cont {
@@ -2067,6 +2082,9 @@ body {
     .elem-one:before {
       bottom: 325px; } }
 
+/**
+ letswork
+*/
 .letswork {
   min-height: 528px;
   background-image: url(assets/form-bg.jpg);
@@ -2161,6 +2179,9 @@ body {
   transform: scale(0);
   transform-origin: left; }
 
+/**
+ Fo0ter
+*/
 .footer {
   min-height: 370px;
   background-color: #2b2d5c;
