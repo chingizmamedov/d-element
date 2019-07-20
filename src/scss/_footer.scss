@@ -65,9 +65,6 @@
         margin-bottom: 25px;
         display: inline-block;
     }
-    &__lastblog {
-
-    }
 }
 .lastblog__item {
     max-width: 365px;
@@ -100,6 +97,9 @@
         color: #fff;
         font-weight: 600;
         line-height: 30px;
+        &:hover {
+            color: $orange;
+        }
     }
 }
 .inst {

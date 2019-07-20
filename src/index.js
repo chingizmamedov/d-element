@@ -1,9 +1,24 @@
 import './scss/main.scss'
 import slick from 'slick-slider'
 import $ from 'jquery'
-import Validation from './js/validationd/validationd'
+import Validation from './js/validationd/validationd.js'
+import setLinks from './js/link/link'
+
 
 var is_safari = /^((?!chrome|android).)*safari/i.test(navigator.userAgent);
+
+const formVal = new Validation({
+  form: $('.letswork__form'),
+  submit: $('#btn__form'),
+  name: $('.name'),
+  email: $('.email')
+})
+
+$('.success-alert__close').click(function(){
+  $(this).parent().removeClass('success-alert__active')
+})
+
+formVal.checkValid()
 
 $('#arrows').click(function(){
 
@@ -18,6 +33,10 @@ $('#arrows').click(function(){
 
 })
 
+const links = ['Home', 'About', 'Portfolio','Blog', 'Clients']
+
+
+setLinks(links)
 $('.burger').click(function(){
     console.log('menu click')
     $('.mobile-menu').toggleClass('mobile-menu__shown')
@@ -96,8 +115,6 @@ $('#pageUp').click(function() {
   $('body,html').animate({scrollTop:0},700);
 });
 
-// Validation('.email')
-console.log(Validation)
 
 
 $(document).scroll(function(){
