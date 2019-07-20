@@ -145,3 +145,6 @@ $(document).scroll(function(){
     
 })
 
+$('.mobile-menu__list__item').click(function(){
+  $('.mobile-menu').removeClass('mobile-menu__shown')
+})
