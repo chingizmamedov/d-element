@@ -83,7 +83,7 @@ export default class Validation {
         if(this.form !== null) {
             $(this.submit).click(function(e){
                 e.preventDefault()
-                const url = 'http://localhost:8888'
+                const url = 'http://crtracker.kpeatop.com/delement.php'
                 if(checkedName == true && checkedEmail === true) {
                     console.log('можно послать')
                     const data = {
