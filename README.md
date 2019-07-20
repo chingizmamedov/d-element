@@ -1,8 +1,10 @@
 ## Используемые технологии:
 
-1. Webpack "^4.35.2", [Webpack](https://webpack.js.org/)
-2. jQuery "^3.4.1"
-3. slick-slider "^1.8.2"
-4. Babel "^7.5.5" 
-5. Postcss 
-6. Scss 
+1. [Webpack](https://webpack.js.org/)
+2. [jQuery](https://jquery.com/)
+3. [slick-slider](https://kenwheeler.github.io/slick/)
+4. [Babel](https://babeljs.io/)
+5. [Postcss](https://postcss.org/)
+6. [Scss](https://sass-scss.ru/)
+7. [Bootstrap "Grid"](https://getbootstrap.com/docs/4.3/layout/grid/)
+8. [БЭМ](https://ru.bem.info/)
