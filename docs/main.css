@@ -3,7 +3,7 @@
 @charset "UTF-8";
 /* Ссылки для продакшна и разработки */
 /* ссылка к изображениям
-    Dev - "/assets/"
+    Dev - "assets/"
     Prod - "assets/"
 */
 /*!
@@ -1181,7 +1181,7 @@ body {
 #pageUp {
   width: 70px;
   height: 57px;
-  background: #cbcbd7 url(/assets/pageuparrow.png) no-repeat center center;
+  background: #cbcbd7 url(assets/pageuparrow.png) no-repeat center center;
   position: fixed;
   right: 13%;
   bottom: 30px;
@@ -1280,19 +1280,19 @@ body {
 /* First section */
 .first-section {
   background-color: #2b2d5c;
-  background-image: url(/assets/BG.png);
+  background-image: url(assets/BG.png);
   background-size: auto 100%;
   background-position: center right;
   background-repeat: no-repeat;
   padding-top: 66px;
   color: #fff; }
   .first-section:before {
-    content: url("/assets/head-bottom-left.png");
+    content: url("assets/head-bottom-left.png");
     position: absolute;
     left: 0;
     bottom: -35px; }
   .first-section:after {
-    content: url("/assets/head-bottom-right.png");
+    content: url("assets/head-bottom-right.png");
     position: absolute;
     right: 0;
     bottom: -22px; }
@@ -1396,21 +1396,21 @@ body {
   border-radius: 27%; }
 
 .icon-fb {
-  background-image: url("/assets/sosial.png");
+  background-image: url("assets/sosial.png");
   background-position-x: 7px;
   background-position-y: 2px; }
 
 .icon-tw {
-  background-image: url("/assets/sosial.png");
+  background-image: url("assets/sosial.png");
   background-position-x: -34px; }
 
 .icon-insta {
-  background-image: url("/assets/sosial.png");
+  background-image: url("assets/sosial.png");
   background-position-x: -80px; }
 
 .icon-any {
   width: 28px;
-  background-image: url("/assets/sosial.png");
+  background-image: url("assets/sosial.png");
   background-position-x: -124px; }
 
 #arrows {
@@ -1574,7 +1574,7 @@ body {
   margin-top: 100px;
   margin-bottom: 100px;
   min-height: 297px;
-  background-image: url("/assets/happy_bg.jpg");
+  background-image: url("assets/happy_bg.jpg");
   padding-top: 70px;
   text-align: center; }
   .happyclients__title {
@@ -1638,14 +1638,14 @@ body {
   .elem-two__item_one {
     width: 100%;
     height: 463px;
-    background-image: url("/assets/gallery1.png");
+    background-image: url("assets/gallery1.png");
     background-repeat: no-repeat;
     background-size: cover;
     transition: .5s; }
   .elem-two__item_two {
     height: 267px;
     width: 100%;
-    background-image: url("/assets/gallery6.png");
+    background-image: url("assets/gallery6.png");
     background-repeat: no-repeat;
     background-size: cover;
     transition: .5s; }
@@ -1676,7 +1676,7 @@ body {
       width: 470px;
       height: 100%;
       background: red;
-      background-image: url("/assets/gallery2.png");
+      background-image: url("assets/gallery2.png");
       background-repeat: no-repeat;
       background-size: cover;
       transition: .5s; }
@@ -1684,7 +1684,7 @@ body {
       width: 166px;
       height: 100%;
       background: green;
-      background-image: url("/assets/gallery3.png");
+      background-image: url("assets/gallery3.png");
       background-repeat: no-repeat;
       background-size: cover;
       transition: .5s; }
@@ -1692,7 +1692,7 @@ body {
       width: 300px;
       height: 100%;
       background: palevioletred;
-      background-image: url("/assets/gallery4.png");
+      background-image: url("assets/gallery4.png");
       background-repeat: no-repeat;
       background-size: cover;
       transition: .5s; }
@@ -1700,7 +1700,7 @@ body {
       width: 330px;
       height: 100%;
       background: darkcyan;
-      background-image: url("/assets/gallery5.png");
+      background-image: url("assets/gallery5.png");
       background-repeat: no-repeat;
       background-size: cover;
       transition: .5s; }
@@ -1708,7 +1708,7 @@ body {
       width: 100%;
       height: 100%;
       background: salmon;
-      background-image: url("/assets/gallery7.png");
+      background-image: url("assets/gallery7.png");
       background-repeat: no-repeat;
       background-size: cover;
       transition: .5s; }
@@ -2088,7 +2088,7 @@ body {
 */
 .letswork {
   min-height: 528px;
-  background-image: url(/assets/form-bg.jpg);
+  background-image: url(assets/form-bg.jpg);
   background-repeat: no-repeat;
   background-size: cover;
   color: #fff; }
