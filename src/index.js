@@ -38,7 +38,6 @@ const links = ['Home', 'About', 'Portfolio','Blog', 'Clients']
 
 setLinks(links)
 $('.burger').click(function(){
-    console.log('menu click')
     $('.mobile-menu').toggleClass('mobile-menu__shown')
 })
 
@@ -122,7 +121,6 @@ $(document).scroll(function(){
       lengthPageUpTop = $('#pageUp').offset().top - $(window).scrollTop() + 57
 
   if(lengthFooterTop < lengthPageUpTop) {
-    console.log('new sty')
     $('#pageUp').addClass('stickyPageUp')
     
   } 

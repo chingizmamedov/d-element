@@ -5,8 +5,6 @@ export default function setLinks(links){
     var is_safari = /^((?!chrome|android).)*safari/i.test(navigator.userAgent);
     links.forEach((item)=> {
 
-        console.log('' + item + '', item)
-
         $('.link__' + item).click(function () {
     
             var elementClick = $('#section__' + item);

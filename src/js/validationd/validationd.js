@@ -25,11 +25,8 @@ export default class Validation {
             let ans,
                 nameLeg
             $(this.name).on('keyup', function(){
-                console.log('presed name', name.val())
                 ans = nameReg.test(name.val())
                 nameLeg = name.val().length
-                console.log("TCL: Validation -> checkValid -> nameLeg", nameLeg)
-                console.log("TCL: Validation -> checkValid -> ans", ans)
                 if(ans) {
                     $(this).siblings().css('background', 'green')
                     checkedName = true
@@ -57,7 +54,6 @@ export default class Validation {
                 email = this.email
             let ansEmail
             $(this.email).on('keyup', function(){
-                console.log('s')
                 ansEmail = emailRe.test(email.val())
                 if(ansEmail) {
                     $(this).siblings().css('background', 'green')
@@ -83,9 +79,8 @@ export default class Validation {
         if(this.form !== null) {
             $(this.submit).click(function(e){
                 e.preventDefault()
-                const url = 'http://crtracker.kpeatop.com/delement.php'
+                const url = 'https://crtrack.ru/delement.php'
                 if(checkedName == true && checkedEmail === true) {
-                    console.log('можно послать')
                     const data = {
                         name: $('.name').val(),
                         email: $('.email').val(),
@@ -108,7 +103,6 @@ export default class Validation {
                         }
                     });
                 } else {
-                    console.log('Нефига нельзя')
                 }
             })
         }
