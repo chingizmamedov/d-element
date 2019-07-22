@@ -93,6 +93,8 @@ export default class Validation {
                         url: url,
                         data: data,
                         success: function(){
+                            checkedName = false
+                            checkedEmail = false
                             $('.name').val('')
                             $('.email').val('')
                             $('.text').val('')
